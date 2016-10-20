@@ -1,0 +1,14 @@
+{
+  "name": "matteusbarbosa/tecweb_t1",
+  "description": "Webservice API Estacionamento",
+  "authors": [
+    {
+      "name": "Matteus Barbosa",
+      "email": "matteusbarbosa2@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "phroute/phroute": "^2.1"
+  }
+}

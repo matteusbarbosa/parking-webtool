@@ -1,0 +1,47 @@
+
+body{
+  min-height: 100%;
+  font-family: 'Arial';
+}
+
+#data-result{
+  margin-top: 5%;
+}
+
+table, form{
+  margin: 0px 12px;
+}
+
+#sidebar-left{
+  border-right: 1px solid #80de80;
+  height: 100%;
+  min-height: 300px;
+}
+
+#sidebar-left ul{
+  list-style: none;
+}
+
+#sidebar-left ul > li {
+  margin: 5%;
+}
+
+#sidebar-left ul > li > .btn{
+  width: 100%;
+}
+
+table tr{
+  border-bottom: 1px solid #C0C0C0;
+  border-top: 1px solid #EAEAEA;
+}
+
+label{
+  width: 100%;
+  display: block;
+  margin-top: 12px;
+  line-height: 1.4em;
+}
+
+#data-result{
+  padding: 12px;
+}

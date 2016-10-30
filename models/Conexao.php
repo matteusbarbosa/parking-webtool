@@ -6,8 +6,13 @@ class Conexao {
     public $mysqli;
 
     final public function getConnection() {
+        
+        $host= "us-cdbr-azure-southcentral-f.cloudapp.net";
+        $banco="tecweb_t1";
+        $user= "be1ff072656392";
+        $pass ="2b1314f9";
 
-        $this->mysqli = new mysqli("127.0.0.1", "root", "", "tecweb_t1");
+        $this->mysqli = new mysqli($host, $user, $pass, $banco);
 
         $this->mysqli->set_charset("utf8");
 

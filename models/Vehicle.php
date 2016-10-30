@@ -1,4 +1,5 @@
 <?php
+include_once('Conexao.php');
 class Vehicle extends Conexao{
 
   protected $table = 'vehicle';
@@ -68,7 +69,7 @@ class Vehicle extends Conexao{
     }
     //Sem enquetes ativas dentro do prazo
     else {
-      return false;
+      return null;
     }
   }
 
@@ -128,3 +129,4 @@ class Vehicle extends Conexao{
 
 
 }
+?>

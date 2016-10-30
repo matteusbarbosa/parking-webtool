@@ -1,6 +1,10 @@
+<?php
+include_once('models/Payment.php');
+?>
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Dashboard</title>
 	<meta charset="UTF-8">
 	<title>Title of the document</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -19,6 +23,7 @@
 	}
 
 	function list_fill(e, address_request) {
+       
 		var xmlhttp = new XMLHttpRequest();
 
 		if(e.options[e.selectedIndex].index !== 0)
@@ -164,16 +169,16 @@ function calculate_payment(e, display_id, address_request) {
 <body>
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-12"><h3>Estacionamento v1.0</h3></div>
+			<div class="col-sm-12"><h3>Estacionamento v1.1</h3></div>
 		</div>
 	<div class="row">
 		<div class="col-sm-3" id="sidebar-left"><ul>
-			<li><h3>Valor da hora: <span style="color: #63d22c;">R$ <?php echo Payment::PRICE_HOUR; ?></span></h3></li>
-			<li><button onclick="read('forms/park_in')" class="btn btn-primary center-block">+ Entrada</button></li>
-			<li><button onclick="read('forms/park_out')" class="btn btn-primary center-block">+ Saída</button></li>
-			<li><button onclick="read('lists/parkings')" class="btn btn-primary center-block">Listar Estacionados</button></li>
-			<li><button onclick="read('lists/clients')" class="btn btn-primary center-block">Listar Clientes</button></li>
-			<li><button onclick="read('lists/vehicles')" class="btn btn-primary center-block">Listar Veículos</button></li>
+			<li><h3>Valor da hora: <span style="color: #63d22c;">R$ <?php  echo Payment::PRICE_HOUR; ?></span></h3></li>
+			<li><button onclick="read('forms/park_in.php')" class="btn btn-primary center-block">+ Entrada</button></li>
+			<li><button onclick="read('forms/park_out.php')" class="btn btn-primary center-block">+ Saída</button></li>
+			<li><button onclick="read('lists/parkings.php')" class="btn btn-primary center-block">Listar Estacionados</button></li>
+			<li><button onclick="read('lists/clients.php')" class="btn btn-primary center-block">Listar Clientes</button></li>
+			<li><button onclick="read('lists/vehicles.php')" class="btn btn-primary center-block">Listar Veículos</button></li>
 		</ul>
 	</div>
 		<div class="col-sm-6">

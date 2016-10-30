@@ -1,5 +1,5 @@
 <?php
-
+include_once('Conexao.php');
 class Client extends Conexao{
 
   protected $table = 'client';
@@ -98,3 +98,4 @@ class Client extends Conexao{
     }
   }
 }
+?>

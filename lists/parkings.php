@@ -1,6 +1,6 @@
 <div id="data-return">
   <?php
-  include '../models/Conexao.php';
+  include_once '../models/Conexao.php';
   include '../models/Parking.php';
   include '../models/Client.php';
   include '../models/Vehicle.php';

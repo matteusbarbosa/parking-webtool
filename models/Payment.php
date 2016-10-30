@@ -1,4 +1,5 @@
 <?php
+include_once('models/Conexao.php');
 class Payment extends Conexao{
 
   const PRICE_HOUR = 8.50;
@@ -25,3 +26,4 @@ class Payment extends Conexao{
     }
   }
 }
+?>

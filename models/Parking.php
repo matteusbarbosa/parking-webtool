@@ -1,4 +1,5 @@
 <?php
+
 class Parking extends Conexao{
 
   protected $table = 'parking';
@@ -130,3 +131,4 @@ class Parking extends Conexao{
     }
   }
 }
+?>

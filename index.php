@@ -12,7 +12,7 @@ include './models/Payment.php';
 date_default_timezone_set('America/Sao_Paulo');
 
 //Raíz do projeto
-$root = 'tecweb/t1';
+$root = 'wwwroot';
 
 use Phroute\Phroute\RouteCollector;
 

@@ -6,9 +6,14 @@ include_once('models/Payment.php');
 <head>
     <title>Dashboard</title>
 	<meta charset="UTF-8">
-	<title>Title of the document</title>
+	
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <style>
+            .collumnRemover{
+                text-align: center;
+            }
+        </style>
 	<script>
 	function read(address_request) {
 		var xmlhttp = new XMLHttpRequest();
@@ -67,7 +72,7 @@ include_once('models/Payment.php');
 		xmlhttp.send(formData);
 	}
 
-function update(address_request) {
+function update(address_request) {    
 	var xmlhttp = new XMLHttpRequest();
 
 	var myForm = document.getElementById('manage-form');
@@ -89,10 +94,10 @@ function update(address_request) {
 }
 
 function remove(address_request) {
-	var xmlhttp = new XMLHttpRequest();
+        var xmlhttp = new XMLHttpRequest();
 
 	var myForm = document.getElementById('manage-form');
-	formData = new FormData(myForm);
+	//formData = new FormData(myForm);
 
 	xmlhttp.open("DELETE", address_request, true);
 
@@ -105,7 +110,7 @@ function remove(address_request) {
 
 	read(address_request);
 
-	xmlhttp.send(formData);
+	xmlhttp.send();
 
 }
 
@@ -169,7 +174,10 @@ function calculate_payment(e, display_id, address_request) {
 <body>
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-12"><h3>Estacionamento v1.1</h3></div>
+			<div class="col-sm-12">
+                            <h3>Estacionamento v1.1<a href="Doc/index.html"class="btn pull-right">Documentação</a></h3>
+                            
+                        </div>
 		</div>
 	<div class="row">
 		<div class="col-sm-3" id="sidebar-left"><ul>

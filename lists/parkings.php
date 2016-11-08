@@ -43,7 +43,7 @@
           <td>'.$park['details'].' +</td>
           <td>'.date('d/m H:i', strtotime($park['start_at'])).'</td>
           <td>'.$end_at.'</td>';
-          echo "<td><a href='#' onclick='$remove_func'>X</a></td></tr>";
+          echo "<td class='collumnRemover'><a class='btn btn-small' href='#' onclick='$remove_func'>Remover</a></tr>";
         }
       }
       if(count($data) == 0)

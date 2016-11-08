@@ -11,17 +11,11 @@ include './models/Payment.php';
 
 date_default_timezone_set('America/Sao_Paulo');
 
-//Raíz do projeto
-$root = 'wwwroot';
-
 use Phroute\Phroute\RouteCollector;
 
 $router = new RouteCollector();
 
-//Recurso : Cliente
-$router->group(['prefix' => $root], function($router){
-
-  //Visualizar
+//Visualizar
   $router->get('/', function(){
     require 'dashboard.php';
   });
@@ -245,7 +239,7 @@ $router->group(['prefix' => $root], function($router){
 
     });
   });
-});
+
 
 # NB. You can cache the return value from $router->getData() so you don't have to create the routes each request - massive speed gains
 $dispatcher = new Phroute\Phroute\Dispatcher($router->getData());

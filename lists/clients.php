@@ -24,7 +24,7 @@
       echo '<tr><td>'.($key+1).'</td>
       <td>'.$client['name'].'</td>
       <td>'.date('d/m H:i', strtotime($client['created_at'])).'</td>';
-      echo "<td><a href='#' onclick='$remove_func'>X</a></td></tr>";
+      echo "<td class='collumnRemover'><a class='btn btn-small' href='#' onclick='$remove_func'>Remover</a></td></tr>";
   }
 
   if(count($data) == 0)

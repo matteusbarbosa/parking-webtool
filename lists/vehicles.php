@@ -36,7 +36,8 @@
       <td>'.$vehicle['title'].'</td>
       <td>'.$vehicle['model'].' +</td>
       <td>'.$created_at.'</td>';
-      echo "<td><a href='#' onclick='$remove_func'>X</a></td></tr>";
+      echo "<td class='collumnRemover'><a class='btn btn-small' href='#' onclick='$remove_func'>Remover</a></tr>";
+      
   }
   if(count($data) == 0)
   echo '<tr><td>Não há resultados para exibir</td></tr>';
@@ -44,5 +45,6 @@
 </tbody>
 </table>
 
+  
 
 </div>
